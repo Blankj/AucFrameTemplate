@@ -1,0 +1,7 @@
+apply {
+    from "${project.rootDir.path}/buildApp.gradle"
+}
+
+dependencies {
+    api project(":feature:feature0:pkg")
+}

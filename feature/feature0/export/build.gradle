@@ -1,0 +1,7 @@
+apply {
+    from "${project.rootDir.path}/buildLib.gradle"
+}
+
+dependencies {
+    api project(":lib:common")
+}

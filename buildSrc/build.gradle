@@ -1,0 +1,15 @@
+repositories {
+    google()
+    jcenter()
+}
+
+apply {
+    plugin 'groovy'
+    plugin 'java-gradle-plugin'
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation "commons-io:commons-io:2.6"
+}
