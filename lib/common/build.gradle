@@ -1,7 +1,3 @@
-apply {
-    from "${project.rootDir.path}/buildLib.gradle"
-}
-
 dependencies {
-    api project(":lib:base")
+    api Config.depConfig.lib.base.dep
 }

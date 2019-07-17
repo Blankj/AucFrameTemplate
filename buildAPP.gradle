@@ -41,9 +41,14 @@ android {
 
 dependencies {
     // LeakCanary
-    debugImplementation Config.depConfig.leakcanary.android
-    debugImplementation Config.depConfig.leakcanary.support_fragment
-    releaseImplementation Config.depConfig.leakcanary.android_no_op
+    debugImplementation Config.depConfig.leakcanary.android.dep
+    debugImplementation Config.depConfig.leakcanary.support_fragment.dep
+    releaseImplementation Config.depConfig.leakcanary.android_no_op.dep
+
+    // 根据 Config.pkgConfig 来依赖所有 pkg
+    for (def entrySet : ConfigUtils.getApplyPkgs().entrySet()) {
+        api entrySet.value.dep
+    }
 }
 
 def getSuffix() {

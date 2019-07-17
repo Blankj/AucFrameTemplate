@@ -1,7 +1,0 @@
-apply {
-    from "${project.rootDir.path}/buildLib.gradle"
-}
-
-dependencies {
-    api project(":feature:feature1:export")
-}

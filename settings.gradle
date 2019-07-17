@@ -1,4 +1,1 @@
-include ':lib:base', ':lib:common',
-        ':feature:feature0:export', ':feature:feature1:export',
-        ':feature:feature0:pkg', ':feature:feature1:pkg',
-        ':feature:feature0:app', ':feature:feature1:app', ':feature:launcher:app'
+ConfigUtils.addBuildListener(gradle)

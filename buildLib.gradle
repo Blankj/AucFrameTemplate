@@ -26,3 +26,14 @@ android {
         abortOnError false
     }
 }
+
+dependencies {
+    if (project.name == 'pkg') {
+        // if module's name equals 'pkg', api all of export
+        for (def entrySet : ConfigUtils.getApplyExports().entrySet()) {
+            api entrySet.value.dep
+        }
+    } else if (project.name == 'export') {
+        api Config.depConfig.lib.common.dep
+    }
+}
