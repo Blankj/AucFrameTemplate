@@ -2,6 +2,7 @@ apply {
     plugin "com.android.application"
     plugin "kotlin-android"
     plugin "kotlin-android-extensions"
+    plugin "com.blankj.api"
 }
 
 android {
@@ -48,6 +49,10 @@ dependencies {
     // 根据 Config.pkgConfig 来依赖所有 pkg
     for (def entrySet : ConfigUtils.getApplyPkgs().entrySet()) {
         api entrySet.value.dep
+    }
+
+    if (Config.depConfig.feature.mock.isApply) {
+        api Config.depConfig.feature.mock.dep
     }
 }
 

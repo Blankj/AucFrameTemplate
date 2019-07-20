@@ -6,6 +6,7 @@
     android:padding="16dp">
 
     <Button
+        android:id="@+id/startFeature1Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/start_feature1"

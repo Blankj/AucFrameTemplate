@@ -19,7 +19,15 @@ class Config {
     static pkgConfig = []
 
     static depConfig = [
+            plugin       : [
+                    gradle: new DepConfig("com.android.tools.build:gradle:3.3.0"),
+                    kotlin: new DepConfig("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"),
+                    api   : new DepConfig("com.blankj:api-gradle-plugin:1.0"),
+            ],
+
             feature      : [
+                    mock    : new DepConfig(":feature:mock"),
+
                     launcher: [
                             app: new DepConfig(":feature:launcher:app")
                     ],

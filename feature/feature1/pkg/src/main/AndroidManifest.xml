@@ -3,7 +3,7 @@
 
     <application>
         <activity
-            android:name=".Feature1Activity"
+            android:name=".main.Feature1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="user"
             android:windowSoftInputMode="stateHidden" />

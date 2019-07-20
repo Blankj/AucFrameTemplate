@@ -28,7 +28,7 @@ android {
 }
 
 dependencies {
-    if (project.name == 'pkg') {
+    if (project.name == 'pkg' || project.name == 'mock') {
         // if module's name equals 'pkg', api all of export
         for (def entrySet : ConfigUtils.getApplyExports().entrySet()) {
             api entrySet.value.dep

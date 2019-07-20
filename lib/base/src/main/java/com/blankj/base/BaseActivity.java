@@ -11,14 +11,7 @@ import android.view.View;
 
 import com.blankj.utilcode.util.ClickUtils;
 
-/**
- * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2016/10/24
- *     desc  : base about activity
- * </pre>
- */
+
 public abstract class BaseActivity extends AppCompatActivity {
 
     protected View     mContentView;

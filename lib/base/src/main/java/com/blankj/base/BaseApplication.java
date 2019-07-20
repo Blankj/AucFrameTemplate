@@ -12,14 +12,7 @@ import com.squareup.leakcanary.LeakCanary;
 
 import java.util.ArrayList;
 
-/**
- * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2018/11/16
- *     desc  : base about application
- * </pre>
- */
+
 public class BaseApplication extends Application {
 
     private static BaseApplication sInstance;
