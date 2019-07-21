@@ -5,15 +5,22 @@ import android.support.annotation.Nullable;
 import android.view.View;
 
 import com.blankj.common.CommonTitleActivity;
+import com.blankj.feature0.pkg.BusConifg;
 import com.blankj.feature0.pkg.R;
 import com.blankj.feature1.export.api.Feature1Api;
 import com.blankj.feature1.export.bean.Feature1Param;
 import com.blankj.feature1.export.bean.Feature1Result;
 import com.blankj.utilcode.util.ApiUtils;
+import com.blankj.utilcode.util.BusUtils;
 import com.blankj.utilcode.util.ToastUtils;
 
 
 public class Feature0Activity extends CommonTitleActivity {
+
+    @BusUtils.Bus(tag = BusConifg.FEATURE0_SHOW_TOAST)
+    public void showToast(String msg) {
+        ToastUtils.showLong(msg);
+    }
 
     @Override
     public CharSequence bindTitle() {
@@ -40,10 +47,23 @@ public class Feature0Activity extends CommonTitleActivity {
                 ToastUtils.showLong(result.getName());
             }
         });
+        BusUtils.register(this);
+        findViewById(R.id.showBusToast).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BusUtils.post(BusConifg.FEATURE0_SHOW_TOAST, "show toast.");
+            }
+        });
     }
 
     @Override
     public void doBusiness() {
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        BusUtils.unregister(this);
     }
 }

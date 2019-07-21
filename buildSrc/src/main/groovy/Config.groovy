@@ -23,6 +23,7 @@ class Config {
                     gradle: new DepConfig("com.android.tools.build:gradle:3.3.0"),
                     kotlin: new DepConfig("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"),
                     api   : new DepConfig("com.blankj:api-gradle-plugin:1.0"),
+                    bus   : new DepConfig("com.blankj:bus-gradle-plugin:2.0"),
             ],
 
             feature      : [

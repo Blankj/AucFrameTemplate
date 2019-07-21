@@ -3,6 +3,7 @@ apply {
     plugin "kotlin-android"
     plugin "kotlin-android-extensions"
     plugin "com.blankj.api"
+    plugin "com.blankj.bus"
 }
 
 android {
