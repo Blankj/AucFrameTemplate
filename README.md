@@ -18,7 +18,7 @@
 
 其项目中具体的工程结构如下所示：
 ```
-└── AndroidUtilCode
+└── AucFrameTemplate
     ├── feature
     │   ├── launcher
     │   │   └── app
