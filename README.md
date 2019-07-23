@@ -18,7 +18,7 @@
 
 其项目中具体的工程结构如下所示：
 ```
-└── AucFrameTemplate
+└── AndroidUtilCode
     ├── feature
     │   ├── launcher
     │   │   └── app
@@ -44,6 +44,28 @@
 基于此，我们可以设计出如下通用架构：
 
 ![AucFrameGeneral](https://raw.githubusercontent.com/Blankj/AndroidUtilCode/master/art/auc_frame_general.png?raw=true)
+
+其工程结构如下所示：
+```
+└── ProjectName
+    ├── feature
+    │   ├── launcher
+    │   │   └── app
+    │   ├── feature0
+    │   │   ├── app
+    │   │   ├── export
+    │   │   └── pkg
+    │   ├── feature1
+    │   │   ├── app
+    │   │   ├── export
+    │   │   └── pkg
+    │   └── mock
+    └── lib
+        ├── base
+        ├── common
+        ├── rxjava
+        └── utilcode
+```
 
 对着架构图也许你也能撸出来一个，但其优雅程度肯定不及我撸的，具体如何优雅？最直接的就是 feature 下的所有模块的 `build.gradle` 都是空空如也，没有一行代码，甚至删了也无所谓，也就不需要你写哪个模块具体需要依赖什么，但确切的依赖关系，就是架构中所示，开发者可自由配置想要运行哪个 `app`，自由配置你所需要的 `pkg`，做到各业务可完全独立运行，下面就让我带领你如何优雅地撸出它来。
 
