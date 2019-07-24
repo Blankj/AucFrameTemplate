@@ -79,6 +79,7 @@ class ConfigUtils {
                 @Override
                 void beforeEvaluate(Project project) {
                     if (project.subprojects.isEmpty()) {// 定位到具体 project
+                        if (project.name == 'dep') return
                         if (project.name == "app") {
                             GLog.l(project.toString() + " applies buildApp.gradle")
                             project.apply {
