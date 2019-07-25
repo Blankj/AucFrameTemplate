@@ -7,6 +7,7 @@
 * 自由选择调试模块
 * 自由选择需要的包
 * 自由切换源码和远程仓库
+* 业务模块互不依赖，完全解偶
 * 模块间通讯一学就会
 * 比 EventBus 更高效的模块内通讯
 
@@ -14,7 +15,7 @@
 
 ## 预览
 架构么，肯定要开门见山，直接上图，不然说的再天花乱坠也无济于事，也就是所谓的 `no picture you say a j8`，AucFrame 的架构如下所示：
-![AucFrame](https://raw.githubusercontent.com/Blankj/AndroidUtilCode/master/art/auc_frame.png)
+![AucFrame](http://ww1.sinaimg.cn/large/b75b8776ly1g5byaor9aej20s10kl0uo.jpg)
 
 其项目中具体的工程结构如下所示：
 ```
@@ -43,7 +44,7 @@
 
 基于此，我们可以设计出如下通用架构：
 
-![AucFrameGeneral](https://raw.githubusercontent.com/Blankj/AndroidUtilCode/master/art/auc_frame_general.png?raw=true)
+![AucFrameGeneral](http://ww1.sinaimg.cn/large/b75b8776ly1g5byaxfsbuj20s10kptam.jpg)
 
 其工程结构如下所示：
 ```
@@ -82,4 +83,6 @@
 
 ~~欢迎加入我的知识星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」学习 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架，目前是第一期，只有 50 个名额，价格是 ¥66 一年，到期日为 2020/07/15，平均一天 2 毛都不用，但你却可以快速学习到该牛逼的组件化框架，50 个之后我会先运行一段时间看是否可行再决定升价来更好地运行它，所以，各位 Androider 还在等什么，当然，进来之后试看发现内容并不喜欢，我也可以无条件全额给你退款，但我相信这份教程绝对值这个价钱，学完后你也会比其他人更加优秀。在学习过程中遇到的问题或者有其他 Android 相关的疑问，我有空都可以帮你解答，而且，星球中分享的不仅于 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架，关于大厂的面试经验、内推通道、[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode) 的使用我也可以提供帮助，目的就是为了把更多优秀的人聚在一起来分享更多的资源让大家一同提升。~~
 
-我的星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」第一期 50 人已满，后面开第二期还会通知大家。
+欢迎加入我的知识星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」学习 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架，目前第一期 ¥66 的 50 个名额已满，有兴趣的可以扫码加入微信群，二期开放的时候统一拉你们。
+
+![基你太美二期](https://ws1.sinaimg.cn/large/b75b8776ly1g5bylu0rhdj206y090wfc.jpg)
