@@ -85,4 +85,4 @@
 
 欢迎加入我的知识星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」学习 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架，目前第一期 ¥66 的 50 个名额已满，有兴趣的可以扫码加入微信群，二期开放的时候统一拉你们。
 
-![基你太美二期](https://ws1.sinaimg.cn/large/b75b8776ly1g5bylu0rhdj206y090wfc.jpg)
+![基你太美二期](http://ww1.sinaimg.cn/large/b75b8776ly1g5jh6n6nttj206y090wfc.jpg)
