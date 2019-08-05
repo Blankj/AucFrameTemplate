@@ -83,6 +83,6 @@
 
 ~~欢迎加入我的知识星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」学习 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架，目前是第一期，只有 50 个名额，价格是 ¥66 一年，到期日为 2020/07/15，平均一天 2 毛都不用，但你却可以快速学习到该牛逼的组件化框架，50 个之后我会先运行一段时间看是否可行再决定升价来更好地运行它，所以，各位 Androider 还在等什么，当然，进来之后试看发现内容并不喜欢，我也可以无条件全额给你退款，但我相信这份教程绝对值这个价钱，学完后你也会比其他人更加优秀。在学习过程中遇到的问题或者有其他 Android 相关的疑问，我有空都可以帮你解答，而且，星球中分享的不仅于 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架，关于大厂的面试经验、内推通道、[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode) 的使用我也可以提供帮助，目的就是为了把更多优秀的人聚在一起来分享更多的资源让大家一同提升。~~
 
-欢迎加入我的知识星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」学习 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架，目前第一期 ¥66 的 50 个名额已满，有兴趣的可以加我微信（加微信时请备注：基你太美二期），二期开放的时候统一拉你们。
+欢迎加入我的知识星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」学习 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架，目前一期内测已结束，二期已开，有兴趣进群的可以加我微信（备注：基你太美二期）。
 
 ![我的二维码](http://ww1.sinaimg.cn/large/b75b8776ly1g5otzlun3wj20a80a6q4x.jpg)
