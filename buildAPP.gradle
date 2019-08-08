@@ -15,17 +15,20 @@ android {
         applicationId Config.applicationId + suffix
         targetSdkVersion Config.targetSdkVersion
         multiDexEnabled true
-        resValue "string", "app_name", Config.appName + suffix
     }
 
     buildTypes {
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationIdSuffix ".debug"
+            resValue "string", "app_name", Config.appName + suffix + ".debug"
         }
+
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue "string", "app_name", Config.appName + suffix
         }
     }
 
