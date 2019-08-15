@@ -81,8 +81,7 @@
 4. AucFrame 之模块间通信
 5. AucFrame 之模块内通信
 
-~~欢迎加入我的知识星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」学习 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架，目前是第一期，只有 50 个名额，价格是 ¥66 一年，到期日为 2020/07/15，平均一天 2 毛都不用，但你却可以快速学习到该牛逼的组件化框架，50 个之后我会先运行一段时间看是否可行再决定升价来更好地运行它，所以，各位 Androider 还在等什么，当然，进来之后试看发现内容并不喜欢，我也可以无条件全额给你退款，但我相信这份教程绝对值这个价钱，学完后你也会比其他人更加优秀。在学习过程中遇到的问题或者有其他 Android 相关的疑问，我有空都可以帮你解答，而且，星球中分享的不仅于 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架，关于大厂的面试经验、内推通道、[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode) 的使用我也可以提供帮助，目的就是为了把更多优秀的人聚在一起来分享更多的资源让大家一同提升。~~
 
-欢迎加入我的知识星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」学习 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架，目前一期内测已结束，二期已开，有兴趣进群的可以加我微信（备注：基你太美二期）。
+欢迎加入我的知识星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」，我会在星球中分享 [AucFrame](https://blankj.com/2019/07/22/auc-frame/) 框架、大厂面经、[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode) 更详尽的说明...一切我所了解的知识，你可以通过支付进入我的星球「**[基你太美](https://t.zsxq.com/FmeqfYF)**」进行体验，加入后优先观看星球中精华的部分，如果觉得星球的内容对自身没有收益，你可以自行申请退款退出星球，也没必要加我好友；**如果你已确定要留在我的星球，可以通过扫描如下二维码（备注：基你太美）加我个人微信，发送给我你的星球 ID，方便我后续拉你进群(PS：进得越早价格越便宜)。**
 
 ![我的二维码](https://raw.githubusercontent.com/Blankj/AndroidUtilCode/master/art/wechat.png)
