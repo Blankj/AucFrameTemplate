@@ -46,17 +46,17 @@ android {
 
 dependencies {
     // LeakCanary
-    debugImplementation Config.depConfig.leakcanary.android.dep
-    debugImplementation Config.depConfig.leakcanary.support_fragment.dep
-    releaseImplementation Config.depConfig.leakcanary.android_no_op.dep
+    debugImplementation Config.depConfig.leakcanary_android.dep
+    debugImplementation Config.depConfig.leakcanary_support_fragment.dep
+    releaseImplementation Config.depConfig.leakcanary_android_no_op.dep
 
     // 根据 Config.pkgConfig 来依赖所有 pkg
     for (def entrySet : ConfigUtils.getApplyPkgs().entrySet()) {
         api entrySet.value.dep
     }
 
-    if (Config.depConfig.feature.mock.isApply) {
-        api Config.depConfig.feature.mock.dep
+    if (Config.depConfig.feature_mock.isApply) {
+        api Config.depConfig.feature_mock.dep
     }
 }
 

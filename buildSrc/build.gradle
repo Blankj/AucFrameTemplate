@@ -1,5 +1,3 @@
-println("===>")
-
 repositories {
     google()
     jcenter()
@@ -13,6 +11,5 @@ apply {
 dependencies {
     implementation gradleApi()
     implementation localGroovy()
-//    implementation project(":dep")
     implementation "commons-io:commons-io:2.6"
 }
