@@ -18,11 +18,11 @@ class ConfigUtils {
         def configs = [:]
         for (Map.Entry<String, DepConfig> entry : Config.depConfig.entrySet()) {
             def (name, config) = [entry.key, entry.value]
-            if (name.startsWith("plugin_")) {
+            if (config.pluginPath) {
                 config.dep = config.pluginPath
             } else {
                 if (config.useLocal) {
-                    config.dep = gradle.rootProject.findProject(config.localPath)
+                    config.dep = gradle.rootProject.findProject(config.projectPath)
                 } else {
                     config.dep = config.remotePath
                 }
@@ -41,7 +41,7 @@ class ConfigUtils {
                     if (project.path.contains(":plugin:")) {
                         return
                     }
-                    if (project.name == "app") {
+                    if (project.name.endsWith("_app")) {
                         GLog.l(project.toString() + " applies buildApp.gradle")
                         project.apply {
                             from "${project.rootDir.path}/buildApp.gradle"

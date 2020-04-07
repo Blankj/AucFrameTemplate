@@ -2,8 +2,8 @@ apply {
     plugin "com.android.application"
     plugin "kotlin-android"
     plugin "kotlin-android-extensions"
-    plugin "com.blankj.api"
-    plugin "com.blankj.bus"
+    plugin Config.depConfig.plugin_api.pluginId
+    plugin Config.depConfig.plugin_bus.pluginId
 }
 
 android {
@@ -47,8 +47,6 @@ android {
 dependencies {
     // LeakCanary
     debugImplementation Config.depConfig.leakcanary_android.dep
-    debugImplementation Config.depConfig.leakcanary_support_fragment.dep
-    releaseImplementation Config.depConfig.leakcanary_android_no_op.dep
 
     // 根据 Config.pkgConfig 来依赖所有 pkg
     for (def entrySet : ConfigUtils.getApplyPkgs().entrySet()) {
@@ -61,6 +59,6 @@ dependencies {
 }
 
 def getSuffix() {
-    if (project.path == ":feature:launcher:app") return ""
-    return project.path.replace(":", "_").substring(":feature".length(), project.path.length() - ":app".length())
+    if (project.name == "feature_launcher_app") return ""
+    return "." + project.name.substring("feature_".length(), project.name.length() - "_app".length())
 }
