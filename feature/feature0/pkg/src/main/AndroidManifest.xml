@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blankj.feature0.pkg">
+
+    <application>
+        <activity
+            android:name=".Feature0Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+
+
+</manifest>

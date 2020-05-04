@@ -1,0 +1,17 @@
+apply {
+    from "${project.rootDir.path}/buildLib.gradle"
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api Config.depConfig.utilcode
+    api Config.depConfig.free_proguard
+    api Config.depConfig.swipe_panel
+
+    api Config.depConfig.androidx_appcompat
+    api Config.depConfig.androidx_material
+    api Config.depConfig.androidx_constraint
+    api Config.depConfig.androidx_multidex
+    api Config.depConfig.kotlin
+    api Config.depConfig.kotlinx
+}

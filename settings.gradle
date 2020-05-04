@@ -1,1 +1,18 @@
-include ':app'
+def modules = [
+        ':feature:feature0:app', ':feature:feature1:app', ':feature:launcher:app',
+        ':feature:feature0:pkg', ':feature:feature1:pkg',
+        ':feature:feature0:export', ':feature:feature1:export',
+        ':lib:base', ':lib:common'
+]
+
+modules.each {
+    def unionPath = getUnionPath(it)
+    include unionPath
+    project(unionPath).projectDir = file(it.substring(1).replace(":", "/"))
+}
+
+static def getUnionPath(String path) {
+    return ":" + path.substring(1).replace(":", "_")
+}
+
+gradle.ext.getUnionPath = this.&getUnionPath

@@ -1,0 +1,8 @@
+apply {
+    from "${project.rootDir.path}/buildApp.gradle"
+}
+
+dependencies {
+    api project(gradle.getUnionPath(":feature:feature0:pkg"))
+    api project(gradle.getUnionPath(":feature:feature1:pkg"))
+}
